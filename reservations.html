@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reservations | Ember &amp; Saffron</title>
+<meta name="description" content="Request a table at Ember &amp; Saffron in Banani, Dhaka. Choose your date, seating time and party size.">
+<meta name="theme-color" content="#14100d">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%2314100d'/%3E%3Ctext x='50' y='72' font-size='62' text-anchor='middle' fill='%23d69a2d'%3E%E2%9C%A6%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css"></head>
+<body>
+<header class="site-header">
+<div class="topbar"><div class="wrap"><span>House 12, Road 11, Banani, Dhaka 1213</span><div class="topbar__right"><span>Saturday – Thursday: 12:00 PM – 11:00 PM</span><a href="tel:+8801711234567">+880 1711-234567</a></div></div></div>
+<div class="header-bar"><div class="wrap">
+<a class="brand" href="index.html"><span class="brand__mark">&#10022;</span><span><span class="brand__name">Ember & Saffron</span><span class="brand__tag">Modern Mughlai grill & kitchen</span></span></a>
+<nav class="nav"><a href="index.html" class="">Home</a><a href="menu.html" class="">Menu</a><a href="gallery.html" class="">Gallery</a><a href="about.html" class="">About</a><a href="contact.html" class="">Contact</a></nav>
+<div class="header-actions"><a class="btn btn--primary" href="reservations.html">Book a table</a><button class="burger" type="button" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span></button></div>
+</div></div>
+<div class="mobile-nav" id="mobile-nav"><a href="index.html">Home</a><a href="menu.html">Menu</a><a href="gallery.html">Gallery</a><a href="about.html">About</a><a href="contact.html">Contact</a><a class="btn btn--primary" href="reservations.html">Book a table</a></div>
+</header><main>
+<section class="banner"><img class="banner__bg" src="assets/images/interior.svg" alt=""><div class="banner__scrim"></div><div class="wrap banner__inner"><p class="eyebrow eyebrow--saffron">Reservations</p><h1>Book a table</h1><p>Choose your date, time and party size. We confirm every booking personally.</p></div></section>
+<section class="section"><div class="wrap split" style="align-items:start"><div class="form-column">
+<div class="static-confirm confirm" hidden></div>
+<form data-static-form="reservation" class="form-grid" novalidate>
+<label class="field"><span>Name for the booking</span><input type="text" name="name" required maxlength="120"></label>
+<label class="field"><span>Phone</span><input type="tel" name="phone" required maxlength="40" placeholder="+880 1XXX-XXXXXX"></label>
+<label class="field field--full"><span>Email</span><input type="email" name="email" required maxlength="180"></label>
+<label class="field"><span>Date</span><input type="date" name="reservation_date" required></label>
+<label class="field"><span>Seating time</span><select name="reservation_time" required><option value="12:00" >12:00 PM</option><option value="12:30" >12:30 PM</option><option value="13:00" >1:00 PM</option><option value="13:30" >1:30 PM</option><option value="14:00" >2:00 PM</option><option value="14:30" >2:30 PM</option><option value="15:00" >3:00 PM</option><option value="15:30" >3:30 PM</option><option value="16:00" >4:00 PM</option><option value="16:30" >4:30 PM</option><option value="17:00" >5:00 PM</option><option value="17:30" >5:30 PM</option><option value="18:00" >6:00 PM</option><option value="18:30" >6:30 PM</option><option value="19:00" >7:00 PM</option><option value="19:30" selected>7:30 PM</option><option value="20:00" >8:00 PM</option><option value="20:30" >8:30 PM</option><option value="21:00" >9:00 PM</option><option value="21:30" >9:30 PM</option><option value="22:00" >10:00 PM</option><option value="22:30" >10:30 PM</option></select></label>
+<label class="field"><span>Guests</span><input type="number" name="guests" required min="1" max="20" value="2"></label>
+<label class="field"><span>Occasion (optional)</span><select name="occasion"><option value="">None</option><option value="Dinner">Dinner</option><option value="Lunch">Lunch</option><option value="Birthday">Birthday</option><option value="Anniversary">Anniversary</option><option value="Business meal">Business meal</option><option value="Family gathering">Family gathering</option><option value="Other">Other</option></select></label>
+<label class="field field--full"><span>Anything we should know? (optional)</span><textarea name="notes" rows="4" maxlength="1000" placeholder="Allergies, high chairs, a quiet corner, wheelchair access…"></textarea></label>
+<div class="field--full"><button type="submit" class="btn btn--primary btn--block">Prepare booking request</button><p class="form-note">This static version does not store reservations in a database. It prepares a WhatsApp/email request for confirmation. For parties over 20 guests, please call us.</p></div>
+</form></div>
+<aside class="stack" style="gap:22px"><div class="media-frame"><img src="assets/images/interior.svg" alt="The dining room at Ember & Saffron" loading="lazy"></div>
+<div class="panel"><h3 class="panel__title" style="font-size:24px">Good to know</h3><ul class="check-list" style="margin-top:16px"><li>Tables are held for 15 minutes past the booking time.</li><li>Peak seatings on Friday and Saturday fill up 3–4 days ahead.</li><li>We keep a few tables for walk-ins at the counter.</li><li>A 24-seat private room is available for lunches, dinners and tastings.</li></ul></div>
+<div class="panel panel--ink"><h3 class="panel__title" style="font-size:24px">Prefer to call?</h3><p style="font-family:var(--display);font-size:30px;font-weight:600;color:var(--saffron);margin:10px 0 0"><a href="tel:+8801711234567">+880 1711-234567</a></p><p>Or email <a href="mailto:reserve@embersaffron.com" style="text-decoration:underline">reserve@embersaffron.com</a>. We answer during opening hours.</p></div></aside></div></section></main>
+<footer class="site-footer"><div class="wrap"><div class="footer-grid">
+<div><div class="footer-brand"><span class="brand__mark">&#10022;</span><span class="footer-brand__name">Ember & Saffron</span></div>
+<p>A modern Mughlai grill room in Banani. Charcoal kebabs, slow-cooked biryani and a serious list of lassis — since 2018.</p><p class="footer-est">Est. 2018 &middot; Dhaka</p></div>
+<div><h4>Explore</h4><ul><li><a href="reservations.html">Book a table</a></li><li><a href="menu.html">Menu</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+<div><h4>Hours</h4><ul><li>Saturday – Thursday<br>12:00 PM – 11:00 PM</li><li>Friday<br>1:30 PM – 11:00 PM</li></ul><p>A 24-seat private room is available for lunches, dinners and tastings.</p></div>
+<div><h4>Find us</h4><ul><li>House 12, Road 11, Banani, Dhaka 1213</li><li><a href="tel:+8801711234567">+880 1711-234567</a></li><li><a href="mailto:reserve@embersaffron.com">reserve@embersaffron.com</a></li></ul>
+<p><a class="btn btn--outline btn--sm" target="_blank" rel="noopener" href="https://wa.me/8801711234567">Message us on WhatsApp</a></p></div>
+</div></div><div class="footer-bottom"><div class="wrap"><span>&copy; 2026 Ember & Saffron. All rights reserved.</span><span>Static HTML/CSS/JS version</span></div></div></footer>
+<script src="assets/js/main.js"></script><script src="assets/js/site.js"></script></body></html>
